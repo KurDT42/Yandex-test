@@ -8,7 +8,7 @@
 		/>
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./fonts/fonts.css" />
-		<title>Document</title>
+		<title>Chess tournament</title>
 	</head>
 
 	<body>
@@ -51,11 +51,16 @@
 							</div>
 							<div class="chessCity-btn-box">
 								<button class="btn btn-dark">
-									Поддержать <br />
-									шахматную мысль</button
-								><button class="btn btn-light">
-									Подробнее <br />
-									о турнире
+									<a href="#anchorBtnSuport"
+										>Поддержать <br />
+										шахматную мысль</a
+									>
+								</button>
+								<button class="btn btn-light">
+									<a href="#anchorBtn">
+										Подробнее <br />
+										о турнире</a
+									>
 								</button>
 							</div>
 						</div>
@@ -73,7 +78,7 @@
 			</div>
 			<div class="content-title">
 				<div class="content-title-box">
-					<div class="content-title-desc">
+					<div class="content-title-desc" id="anchorBtnSuport">
 						<span
 							>Чтобы поддержать <br />
 							Международный васюкинский турнир посетите лекцию на
@@ -91,13 +96,14 @@
 			<article class="content-title">
 				<div class="content-table-box">
 					<div class="content-table-img">
-						<img class="solo-chess-player"
+						<img
+							class="solo-chess-player"
 							src="./images/table-img.png"
 							alt="solo-chess-player"
 						/>
 					</div>
 					<div class="content-table-title">
-						<span class="table-title"
+						<span id="anchorBtn" class="table-title"
 							>и Сеанс
 							<span class="content-title-desc-red">
 								одновременной игры в шахматы на 160 досках</span
@@ -120,11 +126,12 @@
 						><span class="right-bottom-border"
 							>Взнос на телеграммы:</span
 						><span class="left-bottom-border"
-							><span class="line-through">100 руб.</span> 21 руб. 16 коп.</span
+							><span class="line-through">100 руб.</span> 21 руб.
+							16 коп.</span
 						>
 						<span class="table-bot-desc"
-							>По всем вопросам обращаться в администрацию
-							к К. Михельсону</span
+							>По всем вопросам обращаться в администрацию к К.
+							Михельсону</span
 						>
 					</div>
 				</div>
@@ -138,56 +145,69 @@
 						>Будущие источники обогащения васюкинцев</span
 					>
 				</div>
-				
+
 				<div class="slider">
 					<div class="slides">
-					   <div class="slide active"><img class="planeImg" src="./images/plane.png" alt="plane">
-						<span class="numberFon">1</span>
-						
-						<span class="card-text"
-							>Строительство железнодорожной магистрали
-							Москва-Васюки</span
-						><br><br>
-						<span class="numberFon">2</span>
-						<span class="card-text"
-							>Открытие фешенебельной гостиницы «Проходная пешка»
-							и других небоскрёбов</span>
-					   </div>
-					   <div class="slide">
-						<span class="numberFon">3</span>
-						<span class="card-text"
-							>Создание аэропорта «Большие Васюки» с регулярным
-							отправлением почтовых самолётов и дирижаблей
-							во все концы света, включая Лос-Анжелос и Мельбурн</span
-						>
-					   </div>
-					   <div class="slide">
-						<span class="numberFon">4</span>
-						<span class="card-text">Строительство дворца для турнира</span><span></span><br>
-						<span class="numberFon">5</span>
-						<span class="card-text"
-							>Размещение гаражей для гостевого автотранспорта</span
-						>
-					   </div>
-					   <div class="slide">
-						<span class="numberFon">6</span>
-						<span class="card-text"
-							>Постройка сверхмощной радиостанции для передачи всему
-							миру сенсационных результатов</span
-						>
-					   </div>
-					   <div class="slide">
-						<span class="numberFon">7</span>
-						<span class="card-text"
-							>Поднятие сельского хозяйства в радиусе на тысячу
-							километров: производство овощей, фруктов, икры,
-							шоколадных конфет</span
-						>
-					   </div>
+						<div class="slide active">
+							<img
+								class="planeImg"
+								src="./images/plane.png"
+								alt="plane"
+							/>
+							<span class="numberFon">1</span>
+
+							<span class="card-text"
+								>Строительство железнодорожной магистрали
+								Москва-Васюки</span
+							><br /><br />
+							<span class="numberFon">2</span>
+							<span class="card-text"
+								>Открытие фешенебельной гостиницы «Проходная пешка»
+								и других небоскрёбов</span
+							>
+						</div>
+						<div class="slide">
+							<span class="numberFon">3</span>
+							<span class="card-text"
+								>Создание аэропорта «Большие Васюки» с регулярным
+								отправлением почтовых самолётов и дирижаблей
+								во все концы света, включая Лос-Анжелос
+								и Мельбурн</span
+							>
+						</div>
+						<div class="slide">
+							<span class="numberFon">4</span>
+							<span class="card-text"
+								>Строительство дворца для турнира</span
+							><span></span><br />
+							<span class="numberFon">5</span>
+							<span class="card-text"
+								>Размещение гаражей для гостевого автотранспорта</span
+							>
+						</div>
+						<div class="slide">
+							<span class="numberFon">6</span>
+							<span class="card-text"
+								>Постройка сверхмощной радиостанции для передачи всему
+								миру сенсационных результатов</span
+							>
+						</div>
+						<div class="slide">
+							<span class="numberFon">7</span>
+							<span class="card-text"
+								>Поднятие сельского хозяйства в радиусе на тысячу
+								километров: производство овощей, фруктов, икры,
+								шоколадных конфет</span
+							>
+						</div>
 					</div>
 					<div class="navigation">
-						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+						<button class="prev" onclick="changeSlide(-1)">
+							&#10094;
+						</button>
+						<button class="next" onclick="changeSlide(1)">
+							&#10095;
+						</button>
 						<div class="dots">
 							<span class="dot" onclick="currentSlide(1)"></span>
 							<span class="dot" onclick="currentSlide(2)"></span>
@@ -196,11 +216,9 @@
 							<span class="dot" onclick="currentSlide(5)"></span>
 						</div>
 					</div>
-					
-				 </div>
+				</div>
 				<div class="card-box-parent">
 					<div class="card-box-child-one">
-						
 						<span class="numberFon">1</span>
 						<span class="card-text"
 							>Строительство железнодорожной магистрали
@@ -213,10 +231,12 @@
 					</div>
 					<div class="card-box-child-four">
 						<span class="numberFon">4</span>
-						<span class="card-text">Строительство дворца для турнира</span><span></span>
+						<span class="card-text"
+							>Строительство дворца для турнира</span
+						><span></span>
 					</div>
 					<div class="card-box-child-more-six">
-							<span class="numberFon">6</span>
+						<span class="numberFon">6</span>
 						<span class="card-text"
 							>Постройка сверхмощной радиостанции для передачи всему
 							миру сенсационных результатов</span
@@ -244,7 +264,11 @@
 						>
 					</div>
 					<div class="card-box-child-img-seven">
-						<img class="planeImg" src="./images/plane.png" alt="plane">
+						<img
+							class="planeImg"
+							src="./images/plane.png"
+							alt="plane"
+						/>
 						<span class="numberFon">7</span>
 						<span class="card-text"
 							>Поднятие сельского хозяйства в радиусе на тысячу
@@ -252,7 +276,6 @@
 							шоколадных конфет</span
 						>
 					</div>
-					
 				</div>
 			</div>
 			<article class="tournament-players">
@@ -260,11 +283,8 @@
 					<span class="player-title">Участники турнира</span>
 					<div class="page-counter">
 						<button class="prev" id="prevBtn">&#10094;</button>
-							<button class="next" id="prevBtn">&#10095;</button>
-						<span class="page-info" id="page-info"></span
-						><button class="nextBtn" id="nextBtn">
-							
-						</button>
+						<button class="next" id="nextBtn">&#10095;</button>
+						<span class="page-info" id="page-info"></span>
 					</div>
 				</div>
 				<div class="slider-container">

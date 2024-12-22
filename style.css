@@ -146,11 +146,24 @@
         z-index: 5;
 
     }
-
+a:visited{
+color: #FFFFFF;
+}
     .btn-dark {
         background-color: #1F1F1F;
         color: #FFFFFF;
         border: none;
+        outline: none;
+       
+    }
+    .a:visited, a:focus, a:hover {
+
+        color: #fff;
+      }
+    .btn-dark a:focus a:visited{
+        color:#FFFFFF;
+        text-decoration: none;
+
     }
 
     .btn-dark:hover {
@@ -164,8 +177,12 @@
 
     .btn-light:hover {
         background-color: #1F1F1F;
-        ;
         color: #FFFFFF;
+    }
+    .btn-light a:focus a:visited{
+        color:#FFFFFF;
+        text-decoration: none;
+
     }
 
     .moving-line {
