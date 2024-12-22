@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "GolosTextNormal";
+    src: url(./golos-text_bold.woff) format("woff");
+}
+@font-face {
+    font-family: "GolosTextMedium";
+
+    src: url(./GolosText-VariableFont_wght.woff)format("woff");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    src: url(./Merriweather-Regular.woff) format("woff");
+}

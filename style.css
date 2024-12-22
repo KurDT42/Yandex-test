@@ -1,0 +1,913 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        flex-direction: column;
+
+
+
+    }
+
+    :root {
+        --textColor: #313131;
+
+    }
+
+    .container {
+        width: 100%;
+        z-index: 6;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: auto;
+        flex-grow: 1;
+
+    }
+
+    .header-background {
+        background-image: linear-gradient(rgba(213, 178, 146, 0.5), rgba(213, 178, 146, 0.5)), url(images/fon.svg);
+    }
+
+    .header {
+
+        padding: 20px;
+
+        height: 565px;
+    }
+
+
+
+    .logo-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+        padding-left: 256px;
+
+
+    }
+
+    .logo-text {
+        font-family: "GolosTextNormal";
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 0.1px;
+        color: var(--textColor);
+
+    }
+
+    .logo-line {
+        display: flex;
+        gap: 1px;
+
+    }
+
+    .logo-line img {
+        width: 19px;
+    }
+
+    .chessCity-title-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chessCity-img {
+        position: absolute;
+        z-index: 4;
+        margin-left: -50px;
+
+    }
+
+    .chessCity-img img {
+
+        width: 1550px;
+        height: 100%;
+    }
+
+    .chessCity-title-box {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .title-city {
+        font-family: "Merriweather";
+        font-size: 47px;
+        line-height: 51px;
+        letter-spacing: 2px;
+        color: var(--textColor)
+    }
+
+    .title-city-center {
+        font-family: "Merriweather";
+        font-size: 47px;
+        line-height: 51px;
+        letter-spacing: 2px;
+        align-self: center;
+        color: var(--textColor)
+    }
+
+    .chessCity-box {
+        margin-top: 52px;
+        margin-left: 248px;
+
+    }
+
+    .description-city {
+        font-size: 13px;
+        font-family: "GolosTextNormal";
+        margin-top: 25px;
+        text-align: center;
+        line-height: 17px;
+        letter-spacing: 1px;
+        color: var(--textColor)
+    }
+
+    .chessCity-btn-box {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 15px;
+        gap: 12px;
+
+    }
+
+    .btn {
+        font-family: "GolosTextMedium";
+        border-radius: 63px;
+        width: 210px;
+        height: 60px;
+        font-size: 13px;
+        font-weight: medium;
+        z-index: 5;
+
+    }
+
+    .btn-dark {
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .btn-dark:hover {
+        background-color: #FBCE51;
+        color: #1F1F1F;
+    }
+
+    .btn-light {
+        background: none;
+    }
+
+    .btn-light:hover {
+        background-color: #1F1F1F;
+        ;
+        color: #FFFFFF;
+    }
+
+    .moving-line {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        background-color: #F54932;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+
+
+    }
+
+    .moving-line-text {
+        font-family: "Merriweather";
+        color: #FFFFFF;
+        font-size: 18px;
+        display: inline-block;
+        animation: marquee 15s linear infinite;
+        text-transform: uppercase;
+    }
+
+    .content-title {
+        margin-top: 80px;
+        margin-left: 256px;
+
+    }
+
+    .content-title-box {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .content-title-desc {
+        font-family: "Merriweather";
+        font-size: 25px;
+        width: 550px;
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: -0.5px;
+        color: var(--textColor);
+
+    }
+
+    .content-title-desc-red {
+        color: #F54932;
+        font-weight: bold;
+    }
+
+    .content-title-img img {
+        width: 400px;
+    }
+
+    .content-table-box {
+        display: grid;
+        grid-template-columns: 100px 550px;
+        grid-template-rows: -200px 400px;
+        grid-column-gap: 300px;
+    }
+
+
+
+
+    .content-table-img {
+        grid-area: 1 / 1 / 3 / 2;
+        
+    }
+
+    .content-table-title {
+        /* margin-left: -300px; */
+        grid-area: 1 / 2 / 1 / 3;
+    }
+
+    .content-table {
+        grid-area: 2 / 2 / 2 / 3;
+    }
+
+    .table-title {
+        font-family: "Merriweather";
+        color: var(--textColor);
+        font-size: 25px;
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: -0.5px;
+    }
+
+    .content-table-img img {
+        width: 300px;
+
+    }
+
+    .content-table {
+
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(5, 50px);
+        grid-column-gap: 4px;
+        grid-row-gap: 5px;
+
+
+
+    }
+
+    .right-bottom-border {
+        border-right: 3px solid #D0D0D0;
+        border-bottom: 3px solid #D0D0D0;
+        padding: 15px 10px 15px 0;
+        margin: -3px;
+        width: 250px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 120%;
+        color: #313131;
+
+        opacity: 0.7;
+
+
+    }
+
+    .left-bottom-border {
+        border-bottom: 3px solid #D0D0D0;
+        margin-left: -5px;
+        padding: 15px 15px 15px 50px;
+        margin: -3px;
+        width: 300px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+        color: #313131;
+    }
+
+    .table-bot-desc {
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-size:12px;
+        line-height: 120%;
+        color: #3057A2;
+    }
+
+    .line-through {
+        text-decoration: line-through;
+        text-decoration-color: #F54932;
+        text-decoration-thickness: 2px;
+    }
+
+    .table-bot-desc {
+        width: 600px;
+    }
+
+    .content-card {
+        margin-top: 74px;
+    }
+
+    .card-title-high {
+        width: 806px;
+        margin-left: 256px;
+        display: flex;
+        left: calc(50% - 806px/2 - 208px);
+        /* top: 1881px; */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #313131;
+    }
+
+    .card-title-low {
+        margin-top: -50px;
+        display: flex;
+        width: 220px;
+        height: 48px;
+        margin-left: 570px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 120%;
+        color: #3057A2;
+    }
+
+    .card-box-parent {
+        margin-left: 256px;
+        display: grid;
+        grid-template-columns: repeat(3, 394px) repeat(2, 1fr);
+        grid-template-rows: repeat(2, 112px) 136px repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-top: 50px;
+    }
+
+    .numberFon {
+        background-color: #FFFFFF;
+        margin-left: -60px;
+        padding: 10px 15px;
+        border-radius: 25px;
+        margin-right: 18px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        color: #313131;
+    }
+
+
+
+
+    .card-text {
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        color: #313131;
+
+    }
+
+    .card-box-child-one {
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        /* Строительство железнодорожной магистрали Москва-Васюки */
+        padding: 20px 20px 20px 72px;
+
+    }
+
+
+    .card-box-child-four {
+        grid-area: 2 / 1 / 3 / 2;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 20px 44px 72px;
+
+    }
+
+    .card-box-child-more-six {
+        grid-area: 3 / 1 / 4 / 2;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 20px 20px 72px;
+
+    }
+
+    .card-box-child-two {
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 20px 20px 72px;
+
+    }
+
+    .card-box-child-five {
+        grid-area: 2 / 2 / 3 / 3;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 20px 20px 72px;
+
+    }
+
+    .card-box-child-high-three {
+        grid-area: 1 / 3 / 3 / 4;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 20px 20px 72px;
+
+    }
+
+    .card-box-child-img-seven {
+        grid-area: 3 / 2 / 4 / 4;
+        background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+        padding: 20px 250px 20px 72px;
+
+    }
+
+    .planeImg {
+        position: absolute;
+        margin-top: -150px;
+        margin-left: 400px;
+    }
+
+    .tournament-players {
+        margin-top: 80px;
+        margin-left: 256px;
+    }
+
+    .tournament-players-title-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    .player-title {
+        width: 806px;
+        height: 65px;
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #313131;
+    }
+
+    .slider-container {
+        width: 100%;
+        max-width: 1250px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .player-card {
+        min-width: 33.33%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        text-align: center;
+
+    }
+
+    .players-card-box {
+        display: flex;
+        transition: transform 0.5s ease;
+
+
+    }
+
+    .prevBtn {
+        cursor: pointer;
+        outline: none;
+        background-color: rgb(255, 255, 255, 0);
+        border: none;
+    }
+
+    .nextBtn {
+        cursor: pointer;
+        outline: none;
+        background-color: rgb(255, 255, 255, 0);
+        border: none;
+    }
+
+    .page-counter {
+        gap: 5px;
+        align-items: center;
+        display: flex;
+        
+    }
+
+    .page-info {
+        font-family: "GolosTextNormal";
+        color: #313131;
+        font-size: 15px;
+    }
+
+    .players-card-box ul,
+    li {
+        border: none;
+        list-style: none;
+    }
+
+    .img-player {
+        padding: 10px;
+        border-radius: 60px;
+    }
+
+    .img-player img {
+
+        width: 250px;
+        border-radius: 150px;
+    }
+
+    .name-player {
+        /* Хозе-Рауль Капабланка */
+        margin-top: 17px;
+        /* width: 386px; */
+        letter-spacing: 0.8px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 100%;
+        color: #313131;
+
+    }
+
+    .desc-player {
+        /* Чемпион мира по шахматам */
+
+        margin-top: 7px;
+        width: 279px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
+        color: #313131;
+        opacity: 0.6;
+        letter-spacing: 0.7px;
+        margin-left: 45px;
+    }
+
+    .more-details {
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-size: 13px;
+        color: #3057A2;
+        margin-top: 10px;
+        border-radius: 25px;
+        padding: 5px;
+        border: 1px solid #3057A2;
+        outline: none;
+        cursor: pointer;
+    }
+.more-details:hover{
+    background-color: #3057A2;
+    color: #FFFFFF;
+}
+    .footer {
+        width: auto;
+        height: 150px;
+        flex-shrink: 0;
+        background-color: #E9DED4;
+        padding: 40px 72px 72px 72px;
+    }
+
+    .footer span {
+        width: 1222px;
+        height: 38px;
+        font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #313131;
+        opacity: 0.6;
+    }
+    .slider{
+        display: none;
+    }
+     .next{
+        border-radius: 35px;
+        padding: 10px 15px;
+        order: 1;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        
+     }
+     .prev{
+        border-radius: 35px;
+        padding: 10px 15px;
+        margin-left: 490px;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        
+     }
+     .next:hover{
+        background-color: #FBCE51;
+        color: #FFFFFF;
+     }
+     .prev:hover{
+        background-color: #FBCE51;
+        color: #FFFFFF;
+     }
+    
+    
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+
+    }
+
+
+    
+    @media (max-width:1500px) {
+        body {
+            width: 100%;
+
+
+        }
+
+
+    }
+
+    @media (max-width:1367px) {
+        body {
+            width: 155vh;
+
+
+        }
+    }
+    @media (min-width: 768px) {
+        .slider {
+            display: none;
+        }
+     }
+    @media (max-width:420px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            z-index: 5;
+        }
+       
+         
+
+        .chessCity-box {
+            margin-left: 0;
+        }
+
+        .logo-box {
+            padding-left: 0;
+        }
+
+        .chessCity-img {
+
+            z-index: 3;
+        }
+
+        .chessCity-img img {
+            z-index: 3;
+            margin-left: -250px;
+
+        }
+    }
+
+
+    @media (max-width:376px) {
+        .desc-player{
+            margin-left: 280px;
+        }
+        .players-card-box li{
+            font-size: 20px;
+        }
+        .content-table span{
+            font-size: 18px;
+        }
+        .logo-box{
+            margin-left: 100px;
+        }
+        .chessCity-box{
+            margin-left: 100px;
+        }
+        .content-title{
+            margin-left: 130px;
+        }
+        .content-title-desc{
+            font-size: 28px;
+        }
+        .card-text{
+            font-family: "GolosTextNormal";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120%;
+        color: #313131;
+        
+        }
+        .slider {
+            display: block;
+            margin-top: 250px;
+            position: block;
+            max-width: 100%;
+            overflow: hidden;
+         }
+         
+         .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+         }
+         
+         .slide {
+            padding: 90px;
+           width: 535px;
+           height: 530px;
+            box-sizing: border-box;
+            margin-left: 400px;
+            background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+         }
+         
+         
+         
+         .navigation {
+            display: flex;
+            margin-left: 100px;
+           gap: 20px;
+          
+            transform: translateY(-50%);
+         }
+         .next{
+            border-radius: 35px;
+            padding: 10px 25px;
+            order: 1;
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            
+         }
+         .prev{
+            border-radius: 35px;
+            padding: 10px 25px;
+            margin-left: 490px;
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            
+         }
+         .next:hover{
+            background-color: #FBCE51;
+            color: #FFFFFF;
+         }
+         .prev:hover{
+            background-color: #FBCE51;
+            color: #FFFFFF;
+         }
+         .planeImg {
+            z-index: 5;
+            margin-top: -320px;
+            width:600px;
+            position: absolute;
+            margin-left: -150px;
+            
+            
+            
+           
+        }
+         button {
+            
+            border: none;
+            cursor: pointer;
+            font-size: 40px;
+         }
+         .numberFon{
+            font-size: 30px;
+         }
+         .dots {
+            text-align: center;
+            margin-top: 30px;
+         }
+         
+         .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+         }
+         
+         .active {
+            background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
+         }
+        .card-box-parent{
+            display: none;
+        }
+       
+        .player-card {
+            min-width: 100%;
+        }
+
+        body {
+            max-width: 120vh;
+        }
+
+
+
+        .logo-line img {
+            width: 50px;
+        }
+
+        .title-city {
+            font-size: 50px;
+            letter-spacing: 5px;
+        }
+
+        .title-city-center {
+            font-size: 50px;
+            letter-spacing: 5px;
+        }
+
+        .logo-text span {
+            font-size: 30px;
+            width: 250px;
+            line-height: 30px;
+        }
+
+        .description-city {
+            text-align: start;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 2px;
+        }
+
+        .header {
+            max-width: 667px;
+            height: 1100px;
+            margin-left: 50px;
+
+        }
+
+        .chessCity-btn-box {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .btn {
+            width: 370px;
+        }
+
+        .btn-light {
+            background-color: white;
+            border: none;
+        }
+
+
+
+        .chessCity-img {
+            object-fit: contain
+        }
+
+        .chessCity-img img {
+
+            margin-top: 600px;
+            margin-left: -600px;
+            width: 1400px;
+
+        }
+
+        .moving-line {
+            margin-top: 7px;
+        }
+
+    }
+    .tournament-players{
+        margin-top: 150px;
+    }
+    .slider-container{
+        margin-top: 50px;
+    }
+    
