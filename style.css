@@ -146,22 +146,30 @@
         z-index: 5;
 
     }
-a:visited{
-color: #FFFFFF;
-}
+
+    a:visited {
+        color: #FFFFFF;
+    }
+
     .btn-dark {
         background-color: #1F1F1F;
         color: #FFFFFF;
         border: none;
         outline: none;
-       
+        text-decoration: none;
+
     }
-    .a:visited, a:focus, a:hover {
+
+    .a:visited,
+    a:focus,
+    a:hover {
 
         color: #fff;
-      }
-    .btn-dark a:focus a:visited{
-        color:#FFFFFF;
+        text-decoration: none;
+    }
+
+    .btn-dark a {
+        color: #FFFFFF;
         text-decoration: none;
 
     }
@@ -173,14 +181,17 @@ color: #FFFFFF;
 
     .btn-light {
         background: none;
+        text-decoration: none;
     }
 
     .btn-light:hover {
         background-color: #1F1F1F;
         color: #FFFFFF;
+        text-decoration: none;
     }
-    .btn-light a:focus a:visited{
-        color:#FFFFFF;
+
+    .btn-light a {
+        color: #FFFFFF;
         text-decoration: none;
 
     }
@@ -252,7 +263,7 @@ color: #FFFFFF;
 
     .content-table-img {
         grid-area: 1 / 1 / 3 / 2;
-        
+
     }
 
     .content-table-title {
@@ -325,7 +336,7 @@ color: #FFFFFF;
     .table-bot-desc {
         font-family: "GolosTextNormal";
         font-style: normal;
-        font-size:12px;
+        font-size: 12px;
         line-height: 120%;
         color: #3057A2;
     }
@@ -531,7 +542,7 @@ color: #FFFFFF;
         gap: 5px;
         align-items: center;
         display: flex;
-        
+
     }
 
     .page-info {
@@ -598,10 +609,12 @@ color: #FFFFFF;
         outline: none;
         cursor: pointer;
     }
-.more-details:hover{
-    background-color: #3057A2;
-    color: #FFFFFF;
-}
+
+    .more-details:hover {
+        background-color: #3057A2;
+        color: #FFFFFF;
+    }
+
     .footer {
         width: auto;
         height: 150px;
@@ -621,35 +634,40 @@ color: #FFFFFF;
         color: #313131;
         opacity: 0.6;
     }
-    .slider{
+
+    .slider {
         display: none;
     }
-     .next{
+
+    .next {
         border-radius: 35px;
         padding: 10px 15px;
         order: 1;
         background-color: #1F1F1F;
         color: #FFFFFF;
-        
-     }
-     .prev{
+
+    }
+
+    .prev {
         border-radius: 35px;
         padding: 10px 15px;
         margin-left: 490px;
         background-color: #1F1F1F;
         color: #FFFFFF;
-        
-     }
-     .next:hover{
+
+    }
+
+    .next:hover {
         background-color: #FBCE51;
         color: #FFFFFF;
-     }
-     .prev:hover{
+    }
+
+    .prev:hover {
         background-color: #FBCE51;
         color: #FFFFFF;
-     }
-    
-    
+    }
+
+
     @keyframes marquee {
         0% {
             transform: translateX(100%);
@@ -662,7 +680,7 @@ color: #FFFFFF;
     }
 
 
-    
+
     @media (max-width:1500px) {
         body {
             width: 100%;
@@ -680,19 +698,21 @@ color: #FFFFFF;
 
         }
     }
+
     @media (min-width: 768px) {
         .slider {
             display: none;
         }
-     }
+    }
+
     @media (max-width:420px) {
         .container {
             display: flex;
             flex-direction: column;
             z-index: 5;
         }
-       
-         
+
+
 
         .chessCity-box {
             margin-left: 0;
@@ -716,117 +736,133 @@ color: #FFFFFF;
 
 
     @media (max-width:376px) {
-        .desc-player{
+        .desc-player {
             margin-left: 280px;
         }
-        .players-card-box li{
+
+        .players-card-box li {
             font-size: 20px;
         }
-        .content-table span{
+
+        .content-table span {
             font-size: 18px;
         }
-        .logo-box{
+
+        .logo-box {
             margin-left: 100px;
         }
-        .chessCity-box{
+
+        .chessCity-box {
             margin-left: 100px;
         }
-        .content-title{
+
+        .content-title {
             margin-left: 130px;
         }
-        .content-title-desc{
+
+        .content-title-desc {
             font-size: 28px;
         }
-        .card-text{
+
+        .card-text {
             font-family: "GolosTextNormal";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 120%;
-        color: #313131;
-        
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #313131;
+
         }
+
         .slider {
             display: block;
             margin-top: 250px;
             position: block;
             max-width: 100%;
             overflow: hidden;
-         }
-         
-         .slides {
+        }
+
+        .slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
-         }
-         
-         .slide {
+        }
+
+        .slide {
             padding: 90px;
-           width: 535px;
-           height: 530px;
+            width: 535px;
+            height: 530px;
             box-sizing: border-box;
             margin-left: 400px;
             background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
-         }
-         
-         
-         
-         .navigation {
+        }
+
+
+
+        .navigation {
             display: flex;
             margin-left: 100px;
-           gap: 20px;
-          
+            gap: 20px;
+
             transform: translateY(-50%);
-         }
-         .next{
+        }
+
+        .next {
             border-radius: 35px;
             padding: 10px 25px;
             order: 1;
             background-color: #1F1F1F;
             color: #FFFFFF;
-            
-         }
-         .prev{
+
+        }
+
+        .prev {
             border-radius: 35px;
             padding: 10px 25px;
             margin-left: 490px;
             background-color: #1F1F1F;
             color: #FFFFFF;
-            
-         }
-         .next:hover{
+
+        }
+
+        .next:hover {
             background-color: #FBCE51;
             color: #FFFFFF;
-         }
-         .prev:hover{
+        }
+
+        .prev:hover {
             background-color: #FBCE51;
             color: #FFFFFF;
-         }
-         .planeImg {
+        }
+
+        .planeImg {
             z-index: 5;
             margin-top: -320px;
-            width:600px;
+            width: 600px;
             position: absolute;
             margin-left: -150px;
-            
-            
-            
-           
+
+
+
+
         }
-         button {
-            
+
+        button {
+
             border: none;
             cursor: pointer;
             font-size: 40px;
-         }
-         .numberFon{
+        }
+
+        .numberFon {
             font-size: 30px;
-         }
-         .dots {
+        }
+
+        .dots {
             text-align: center;
             margin-top: 30px;
-         }
-         
-         .dot {
+        }
+
+        .dot {
             height: 10px;
             width: 10px;
             margin: 0 2px;
@@ -834,15 +870,16 @@ color: #FFFFFF;
             border-radius: 50%;
             display: inline-block;
             cursor: pointer;
-         }
-         
-         .active {
+        }
+
+        .active {
             background-image: linear-gradient(rgba(240, 224, 207, 0.9), rgba(240, 224, 207, 0.9)), url(images/fon.svg);
-         }
-        .card-box-parent{
+        }
+
+        .card-box-parent {
             display: none;
         }
-       
+
         .player-card {
             min-width: 100%;
         }
@@ -921,10 +958,11 @@ color: #FFFFFF;
         }
 
     }
-    .tournament-players{
+
+    .tournament-players {
         margin-top: 150px;
     }
-    .slider-container{
+
+    .slider-container {
         margin-top: 50px;
     }
-    
