@@ -4,12 +4,10 @@
 
     body {
         display: flex;
-        padding: 0;
+        padding-left: -150px;
         margin: 0;
         overflow-x: hidden;
         flex-direction: column;
-
-
 
     }
 
@@ -26,29 +24,30 @@
         height: auto;
         flex-grow: 1;
 
+
+
     }
 
     .header-background {
+
         background-image: linear-gradient(rgba(213, 178, 146, 0.5), rgba(213, 178, 146, 0.5)), url(images/fon.svg);
     }
 
     .header {
-
         padding: 20px;
-
         height: 565px;
+        margin-left: 100px;
     }
 
 
 
     .logo-box {
+        margin-left: 256px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         gap: 6px;
-        padding-left: 256px;
-
 
     }
 
@@ -80,6 +79,7 @@
         position: absolute;
         z-index: 4;
         margin-left: -50px;
+        margin-left: 150px;
 
     }
 
@@ -220,21 +220,22 @@
 
     .content-title {
         margin-top: 80px;
-        margin-left: 256px;
+        margin-left: 356px;
 
     }
 
     .content-title-box {
         display: flex;
         align-items: center;
+        gap: 50px;
 
 
     }
 
     .content-title-desc {
         font-family: "Merriweather";
-        font-size: 25px;
-        width: 550px;
+        font-size: 30px;
+        width: 650px;
         text-transform: uppercase;
         line-height: 30px;
         letter-spacing: -0.5px;
@@ -248,12 +249,14 @@
     }
 
     .content-title-img img {
-        width: 400px;
+        width: 370px;
+
+
     }
 
     .content-table-box {
         display: grid;
-        grid-template-columns: 100px 550px;
+        grid-template-columns: 200px 650px;
         grid-template-rows: -200px 400px;
         grid-column-gap: 300px;
     }
@@ -262,12 +265,14 @@
 
 
     .content-table-img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
         grid-area: 1 / 1 / 3 / 2;
 
     }
 
     .content-table-title {
-        /* margin-left: -300px; */
         grid-area: 1 / 2 / 1 / 3;
     }
 
@@ -282,10 +287,12 @@
         text-transform: uppercase;
         line-height: 30px;
         letter-spacing: -0.5px;
+
     }
 
     .content-table-img img {
-        width: 300px;
+        width: 450px;
+        height: 450px;
 
     }
 
@@ -353,6 +360,7 @@
 
     .content-card {
         margin-top: 74px;
+        margin-left: 100px;
     }
 
     .card-title-high {
@@ -480,16 +488,28 @@
 
     .tournament-players {
         margin-top: 80px;
-        margin-left: 256px;
+
+
     }
 
     .tournament-players-title-box {
+
         display: flex;
-        gap: 30px;
+        align-items: center;
+
+    }
+
+    .page-counter {
+        gap: 5px;
+        align-items: center;
+        display: flex;
+        width: auto;
+
     }
 
     .player-title {
-        width: 806px;
+        margin-left: 356px;
+        width: 646px;
         height: 65px;
         font-family: "Merriweather";
         font-style: normal;
@@ -501,10 +521,9 @@
     }
 
     .slider-container {
-        width: 100%;
         max-width: 1250px;
-        position: relative;
         overflow: hidden;
+        margin-left: 356px;
     }
 
     .player-card {
@@ -538,12 +557,7 @@
         border: none;
     }
 
-    .page-counter {
-        gap: 5px;
-        align-items: center;
-        display: flex;
 
-    }
 
     .page-info {
         font-family: "GolosTextNormal";
@@ -569,9 +583,7 @@
     }
 
     .name-player {
-        /* Хозе-Рауль Капабланка */
         margin-top: 17px;
-        /* width: 386px; */
         letter-spacing: 0.8px;
         font-family: "GolosTextNormal";
         font-style: normal;
@@ -582,7 +594,6 @@
     }
 
     .desc-player {
-        /* Чемпион мира по шахматам */
 
         margin-top: 7px;
         width: 279px;
@@ -620,7 +631,8 @@
         height: 150px;
         flex-shrink: 0;
         background-color: #E9DED4;
-        padding: 40px 72px 72px 72px;
+        padding: 40px 72px 72px 356px;
+
     }
 
     .footer span {
@@ -667,6 +679,9 @@
         color: #FFFFFF;
     }
 
+    .phoneSize {
+        display: none;
+    }
 
     @keyframes marquee {
         0% {
@@ -736,16 +751,113 @@
 
 
     @media (max-width:376px) {
+        .more-details {
+            font-size: 34px;
+            padding: 10px;
+        }
+
+        .img-player img {
+            width: 500px;
+            border-radius: 250px;
+
+        }
+
+        .player-title {
+            width: 100px;
+        }
+
+        .content-card {
+            margin-left: -100px;
+        }
+
+        .table-bot-desc {
+            margin-top: 20px;
+        }
+
+        .right-bottom-border {
+            border-right: 5px solid #D0D0D0;
+            border-bottom: 5px solid #D0D0D0;
+            padding: 15px 15px 50px 0;
+            margin: -3px;
+            width: 250px;
+
+
+            opacity: 0.7;
+
+
+        }
+
+        .left-bottom-border {
+            border-bottom: 3px solid #D0D0D0;
+            margin-left: -5px;
+            padding: 15px 15px 50px 50px;
+            margin: -3px;
+            width: 300px;
+
+        }
+
+        .content-table-title {
+            width: 600px;
+            margin-top: 40px;
+
+        }
+
+        .content-table-title span {
+            font-size: 35px;
+
+        }
+
+        .phoneSize {
+
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .table-title {
+            font-size: 30px;
+        }
+
+        .content-table-box {
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+        }
+
+        .content-table-img {
+            width: 500px;
+            height: 400px;
+        }
+
+        .content-title-desc span {
+            font-size: 40px;
+        }
+
+        .content-title-img img {
+            width: 550px;
+            margin-bottom: 30px;
+        }
+
+        .content-title-box {
+
+            flex-direction: column;
+            margin-left: -130px;
+        }
+
         .desc-player {
-            margin-left: 280px;
+            margin-left: 270px;
         }
 
         .players-card-box li {
-            font-size: 20px;
+            font-size: 32px;
         }
 
         .content-table span {
-            font-size: 18px;
+            font-size: 22px;
         }
 
         .logo-box {
@@ -761,7 +873,8 @@
         }
 
         .content-title-desc {
-            font-size: 28px;
+            font-size: 32px;
+            line-height: 35px;
         }
 
         .card-text {
@@ -881,11 +994,13 @@
         }
 
         .player-card {
-            min-width: 100%;
+
+            min-width: 90%;
+
         }
 
         body {
-            max-width: 120vh;
+            max-width: 110vh;
         }
 
 
@@ -948,7 +1063,7 @@
         .chessCity-img img {
 
             margin-top: 600px;
-            margin-left: -600px;
+            margin-left: -800px;
             width: 1400px;
 
         }
@@ -957,12 +1072,4 @@
             margin-top: 7px;
         }
 
-    }
-
-    .tournament-players {
-        margin-top: 150px;
-    }
-
-    .slider-container {
-        margin-top: 50px;
     }
