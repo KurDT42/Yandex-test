@@ -9,9 +9,9 @@ let cardsPerView = 0;
 let currentIndex = 0;
 
 function updateCarousel() {
-	cardWidth = carouselCards[0].offsetWidth + 20; 
+	cardWidth = carouselCards[0].offsetWidth + 20;
 	if (window.innerWidth <= 377) {
-		cardsPerView = 1; 
+		cardsPerView = 1;
 	} else {
 		cardsPerView = Math.floor(carouselTrack.offsetWidth / cardWidth);
 	}
@@ -24,28 +24,27 @@ function updateCarousel() {
 }
 
 function nextSlide() {
-    currentIndex++;
-    if (currentIndex >= carouselCards.length) {
-        currentIndex = 0;
-    }
-    updateCarousel();
+	currentIndex++;
+	if (currentIndex >= carouselCards.length) {
+		currentIndex = 0;
+	}
+	updateCarousel();
 }
 
 function prevSlide() {
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = carouselCards.length - 1;
-    }
-    updateCarousel();
+	currentIndex--;
+	if (currentIndex < 0) {
+		currentIndex = carouselCards.length - 1;
+	}
+	updateCarousel();
 }
 
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener("click", nextSlide);
+prevButton.addEventListener("click", prevSlide);
 
-window.addEventListener('resize', updateCarousel);
+window.addEventListener("resize", updateCarousel);
 
 updateCarousel();
-
 
 nextButton.addEventListener("click", nextSlide);
 prevButton.addEventListener("click", prevSlide);
@@ -87,3 +86,4 @@ function changeSlide(n) {
 function currentSlide(n) {
 	showSlides((slideIndex = n));
 }
+setInterval(nextSlide, 4000);
